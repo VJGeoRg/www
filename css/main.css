@@ -50,6 +50,6 @@ header #logo span {
 
 /* CSS FOR SECTIONS */
 
-#home {
+#home, #gallery, #contacts, #product, #donate {
     margin: 2.5em 2.5em;
 }
