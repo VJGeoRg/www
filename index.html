@@ -1,0 +1,68 @@
+<<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-widht,initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible"content="ie=edge">
+    <title>html5 and CSS3 sait</title>
+    <link rel="stylesheet" href="css/main.css">
+
+
+
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+  </head>
+  <body>
+
+
+
+  <div class="wrapper">
+    <div class="box a">
+    <video width="300" autoplay>
+
+
+<source src="sp.mp4" type="video/mp4">
+
+</video>
+
+    </div>
+
+
+
+
+    <div class="box b">
+    <div id="about">
+      <a href="#" title="Home" onclick="slowscroll('#main')">Home</a>
+      <a href="#" title="Gallery" onclick="slowscroll('#main')">Gallery</a>
+      <a href="#" title="Contacts" onclick="slowscroll('#main')">Contacts</a>
+      <a href="#" title="Product/Cervice" onclick="slowscroll('#main')">Product/Cervice</a>
+      <a href="#" title="Donate" onclick="slowscroll('#main')">Donate</a>
+
+
+    </div>
+
+
+
+    </div>
+
+  </div>
+
+
+
+
+    <header>
+
+
+
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      function slowscroll(id) {
+        $(body).animate({
+          scrollTop: $(id).offset().top
+        }, 500)
+
+      }
+  </body>
+</html>
