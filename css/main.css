@@ -11,60 +11,76 @@ body {
     color: #fff;
 }
 
-.container {
-    display: grid;
+#logo {
+    grid-area: logo;
 }
 
-header #logo {
-    color: #fff;
-    cursor: pointer;
+#menu {
+    grid-area: menu;
 }
-
-header #logo span {
-    font-size: 1.7em;
-    line-height: 45px;
-    margin-left: 40px;
-    font-family: 'Suez one', serif;
-}
-
 #menu {
     margin-top: 2em;
     display: flex;
     justify-content: flex-start;
+    text-transform: uppercase;
 }
-
 #menu a {
     color: blue;
     margin-left: 2.5em;
     margin-right: 2.5em;
+}
+#menu a:first-child {
+    margin-left: 0;
 }
 
 #menu a:visited {
     color: blue;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 300px auto;
+#content {
+    grid-area: content;
 }
-
 
 /* CSS FOR SECTIONS */
 
-#home, #gallery, #contacts, #product, #donate {
-    margin: 2.5em 2.5em;
-}
-
-@media only screen and (max-width: 1200px) {
-    .wrapper {
-        display: grid;
-        grid-template-columns: 100%;
+@media only screen and (max-width: 1400px) {
+    #menu {
+        margin-top: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-self: center;
+        text-transform: uppercase;
     }
-}
-
-@media only screen and (min-width: 1201px) {
+    #menu a {
+        color: blue;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
     .wrapper {
         display: grid;
         grid-template-columns: 300px auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "logo menu"
+            "content content"
+            "footer footer";
+    }
+    #content {
+        margin: 0 2.5em;
+    }
+}
+
+@media only screen and (min-width: 1401px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 300px auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "logo menu"
+            "logo content"
+            "footer footer";
+    }
+    #content {
+        margin: 2.5em 2.5em 2.5em 0;
     }
 }
