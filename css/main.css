@@ -1,68 +1,54 @@
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-</style>
-*{
-  margin: 0;
-  padding: 0;
-  outline: none
-}
-body, html{
-  widht:100%;
-  height:100%;
-}
-body{
-  background-color: #000;
-  font-family: Trebuchet MS, Helvetica;
-}
-body{
-  .container {
-  display: grid;
+* {
+    margin: 0;
+    padding: 0;
+    outline: none
 }
 
+body {
+    background-color: #000;
+    font-family: Trebuchet MS, Helvetica;
 }
 
-
-header #logo{
-  color:#fff;
-  cursor:pointer;
+.container {
+    display: grid;
 }
 
-header #logo span{
-  font-size: 1.7em;
-  line-height: 45px;
-  margin-left: 40px;
-  font-family: 'Suez one', serif;
+header #logo {
+    color: #fff;
+    cursor: pointer;
 }
 
-@media(min-width:701px){
-  #logo{
+header #logo span {
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Suez one', serif;
+}
 
-    font-size: 1.1em
-  }
-
-  #about {
+#menu {
     display: flex;
     justify-content: flex-start;
-  }
-  #about a {
+}
+
+#menu a {
+    color: blue;
     margin-left: 2.5em;
     margin-right: 2.5em;
-
-  }
 }
 
-@media (max-width:700px){
-  #logo{
-    margin-top:15px;
-    float:left;
-    widht:100%;
-    font-size: 1.1em
-  }
+#menu a:visited {
+    color: blue;
 }
-
 
 .wrapper {
-  display: grid;
-  grid-template-columns: 300px auto;
+    display: grid;
+    grid-template-columns: 300px auto;
+}
 
+
+/* CSS FOR SECTIONS */
+
+#home {
+    margin: 2.5em 2.5em;
 }

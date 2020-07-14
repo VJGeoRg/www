@@ -1,78 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="widht=device-widht,initial-scale=1.0">
-    <meta http-equiv="X-UA-compatible"content="ie=edge">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
     <title>html5 and CSS3 sait</title>
     <link rel="stylesheet" href="css/main.css">
 
-
-
     <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
     <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
+    <!-- HTML CSS GRID WRAPPER-->
+    <div class="wrapper">
+
+        <!-- LOGO ROW (LEFT ROW) -->
+        <div class="box a">
+            <!-- LOGO (video) -->
+            <video width="300" autoplay loop>
+                <source src="sp.mp4" type="video/mp4">
+            </video>
+        </div>
 
 
+        <!-- MAIN ROW (RIGHT ROW) -->
+        <div class="box b">
 
+            <!-- MENU -->
+            <div id="menu">
+                <a href="#" title="Home" onclick="slowscroll('#home')">Home</a>
+                <a href="#" title="Gallery" onclick="slowscroll('#gallery')">Gallery</a>
+                <a href="#" title="Contacts" onclick="slowscroll('#contacts')">Contacts</a>
+                <a href="#" title="Product/Cervice" onclick="slowscroll('#product')">Product/Service</a>
+                <a href="#" title="Donate" onclick="slowscroll('#donate')">Donate</a>
+            </div>
 
+            <!-- PAGE CONTENT HERE-->
+            <!-- Home SECTION -->
+            <div id="home">
+                <iframe src="https://player.twitch.tv/?channel=spectromatic&parent=vjgeorg.github.io" height="360"
+                    width="640" frameborder="0" scrolling="no" allowfullscreen="true">
+                </iframe>
+            </div>
 
-  <div class="wrapper">
-    <div class="box a">
-    <video width="300" autoplay loop>
+            <!-- Gallery SECTION -->
+            <div id="gallery">
+                Gallery
+            </div>
 
+            <!-- Contacts SECTION -->
+            <div id="contacts">
+                Contacts
+            </div>
 
-<source src="sp.mp4" type="video/mp4">
-
-</video>
+            <!-- Product SECTION -->
+            <div id="product">
+                Product
+            </div>
+            <!-- Donate SECTION -->
+            <div id="donate">
+                Donate
+            </div>
+        </div>
 
     </div>
-
-
-
-
-    <div class="box b">
-    <div id="about">
-      <a href="#" title="Home" onclick="slowscroll('#main')">Home</a>
-      <a href="#" title="Gallery" onclick="slowscroll('#main')">Gallery</a>
-      <a href="#" title="Contacts" onclick="slowscroll('#main')">Contacts</a>
-      <a href="#" title="Product/Cervice" onclick="slowscroll('#main')">Product/Cervice</a>
-      <a href="#" title="Donate" onclick="slowscroll('#main')">Donate</a>
-
-
-    </div>
-    <iframe
-    src="https://player.twitch.tv/?channel=spectromatic&parent=vjgeorg.github.io"
-    height="360"
-    width="640"
-    frameborder="0"
-    scrolling="no"
-    allowfullscreen="true">
-</iframe>
-
-
-
-    </div>
-
-  </div>
-
-
-
-
-    <header>
-
-
-
-    </header>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-      function slowscroll(id) {
-        $(body).animate({
-          scrollTop: $(id).offset().top
-        }, 500)
+        function slowscroll(id) {
+            $(document.body).animate({
+                scrollTop: $(id).offset().top
+            }, 500)
+        }
+    </script>
 
-      }
-  </body>
+</body>
+
 </html>
