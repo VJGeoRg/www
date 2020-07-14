@@ -55,14 +55,14 @@ header #logo span {
     margin: 2.5em 2.5em;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
     .wrapper {
         display: grid;
         grid-template-columns: 100%;
     }
 }
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1201px) {
     .wrapper {
         display: grid;
         grid-template-columns: 300px auto;
