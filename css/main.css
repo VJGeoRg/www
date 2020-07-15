@@ -69,7 +69,7 @@ body {
     #content #home {
         position: relative;
         width: 320px;
-        margin: 0 auto;
+        margin: 0 0;
     }
     #content iframe {
         width: 320px;
