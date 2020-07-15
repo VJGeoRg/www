@@ -75,6 +75,15 @@
                 var player = new Twitch.Player("SamplePlayerDivID", options);
                 player.setVolume(0.5);
             </script>
+            <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+            <script type="text/javascript">
+                new Twitch.Embed("SamplePlayerDivID", {
+                    width: 854,
+                    height: 480,
+                    playsinline: true,
+                    channel: "spectromatic"
+                });
+            </script>
         </div>
     </div>
 
