@@ -48,7 +48,7 @@ body {
         display: grid;
         grid-template-columns: 300px auto;
         grid-template-rows: auto;
-        grid-template-areas: 
+        grid-template-areas:
             "logo menu"
             "content content"
             "footer footer";
@@ -82,7 +82,7 @@ body {
         display: grid;
         grid-template-columns: 300px auto;
         grid-template-rows: auto;
-        grid-template-areas: 
+        grid-template-areas:
             "logo menu"
             "content content"
             "footer footer";
@@ -96,7 +96,7 @@ body {
         text-transform: uppercase;
     }
     #menu a {
-        color: blue;
+        color: #fff9f9;
         margin: 1em 2em;
 
     }
@@ -120,7 +120,7 @@ body {
         display: grid;
         grid-template-columns: 300px auto;
         grid-template-rows: auto auto;
-        grid-template-areas: 
+        grid-template-areas:
             "logo menu"
             "logo content"
             "footer footer";
