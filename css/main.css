@@ -67,10 +67,16 @@ body {
 
     #logo {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         position: relative;
         height: 300px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #logo video {
+        margin: 0;
+        padding: 0;
     }
 
     #menu a {
