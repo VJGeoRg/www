@@ -69,6 +69,8 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        position: relative;
+        height: 300px;
     }
 
     #menu a {
